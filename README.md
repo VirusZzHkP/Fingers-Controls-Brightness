@@ -4,7 +4,7 @@ This Brightness Control With Hand Detection OpenCV Python With Source Code was d
 
 ![Control Brightness Using FINGERS](https://user-images.githubusercontent.com/76624193/146683296-a85c47d9-5b3d-44c9-b7bb-2d2b92101335.gif)
 
-#Required Libraries:<br>
+# Required Libraries:<br>
 
     import cv2
     import mediapipe as mp
@@ -12,7 +12,7 @@ This Brightness Control With Hand Detection OpenCV Python With Source Code was d
     import screen_brightness_control as sbc
     import numpy as np
    
-#Source Code:<br>
+# Source Code:<br>
 
       import mediapipe as mp
       from math import hypot
@@ -68,7 +68,12 @@ H@ppy C0ding ♥
 
 <br>
 CONNECT WITH ME:<br>
-[LinkedIn](https://www.linkedin.com/in/viruszzwarning/) <br>
-[Twitter](https://twitter.com/hrisikesh_pal)
-<br><Br>
+
+   [LinkedIn](https://www.linkedin.com/in/viruszzwarning/) <br>
+   
+   [Twitter](https://twitter.com/hrisikesh_pal)
+    
+<br>
+Also read my blogs on MEDIUM:
+
 [My Blogs On Medium](https://viruszzwarning.medium.com/)
