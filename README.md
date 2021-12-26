@@ -1,5 +1,5 @@
 # Fingers-Controls-Brightness
-This Brightness Control With Hand Detection OpenCV Python With Source Code was developed using Python OpenCV,we are going Building a Brightness Controller with OpenCV , To change the brightness of a computer.
+This Brightness Control With Hand Detection OpenCV Python With Source Code was developed using Python OpenCV,we are going to Build a Brightness Controller with OpenCV to change the brightness of a computer.
 
 
 ![Control Brightness Using FINGERS](https://user-images.githubusercontent.com/76624193/146683296-a85c47d9-5b3d-44c9-b7bb-2d2b92101335.gif)
