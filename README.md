@@ -1,8 +1,16 @@
 # Fingers-Controls-Brightness
 This Brightness Control With Hand Detection OpenCV Python With Source Code was developed using Python OpenCV,we are going to Build a Brightness Controller with OpenCV to change the brightness of a computer.
 
+Language used:
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![GitHub top language](https://img.shields.io/github/languages/top/VirusZzHkP/Fingers-Controls-Brightness?color=red&style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/VirusZzHkP/DirectoryDownloader?color=yellow&style=for-the-badge)](https://github.com/VirusZzHkP/DirectoryDownloader/blob/main/LICENSE)
+
+---
 ![Control Brightness Using FINGERS](https://user-images.githubusercontent.com/76624193/146683296-a85c47d9-5b3d-44c9-b7bb-2d2b92101335.gif)
+
+
 
 # Required Libraries:<br>
 
@@ -12,68 +20,22 @@ This Brightness Control With Hand Detection OpenCV Python With Source Code was d
     import screen_brightness_control as sbc
     import numpy as np
    
-# Source Code:<br>
-
-      import mediapipe as mp
-      from math import hypot
-      import screen_brightness_control as sbc
-      import numpy as np
-
-      cap = cv2.VideoCapture(0)
-
-      mpHands = mp.solutions.hands
-      hands = mpHands.Hands()
-      mpDraw = mp.solutions.drawing_utils
-
-      while True:
-          success,img = cap.read()
-          imgRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-          results = hands.process(imgRGB)
-
-          lmList = []
-          if results.multi_hand_landmarks:
-              for handlandmark in results.multi_hand_landmarks:
-                  for id,lm in enumerate(handlandmark.landmark):
-                      h,w,_ = img.shape
-                      cx,cy = int(lm.x*w),int(lm.y*h)
-                      lmList.append([id,cx,cy])
-                  mpDraw.draw_landmarks(img,handlandmark,mpHands.HAND_CONNECTIONS)
-
-          if lmList != []:
-              x1,y1 = lmList[4][1],lmList[4][2]
-              x2,y2 = lmList[8][1],lmList[8][2]
-
-              cv2.circle(img,(x1,y1),4,(255,0,0),cv2.FILLED)
-              cv2.circle(img,(x2,y2),4,(255,0,0),cv2.FILLED)
-              cv2.line(img,(x1,y1),(x2,y2),(255,0,0),3)
-
-              length = hypot(x2-x1,y2-y1)
-
-              bright = np.interp(length,[15,220],[0,100])
-              print(bright,length)
-              sbc.set_brightness(int(bright))
-
-              # Hand range 15 - 220
-              # Brightness range 0 - 100
-
-          cv2.imshow('Image',img)
-          if cv2.waitKey(1) & 0xff==ord('q'):
-              break
-              
-              
-      
+    
 Cheers !!
 H@ppy C0ding ♥
---VirusZzHkP
+
+VirusZzWarning
 
 <br>
-CONNECT WITH ME:<br>
+Connect with me:
 
-   [LinkedIn](https://www.linkedin.com/in/viruszzwarning/) <br>
-   
-   [Twitter](https://twitter.com/hrisikesh_pal)
+<a href="https://www.linkedin.com/in/viruszzwarning/">![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a><a href="https://twitter.com/hrisikesh_pal">![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)</a>
     
-<br>
-Also read my blogs on MEDIUM:
+Read my blogs:<br>
+<a href="https://viruszzwarning.medium.com/">![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)</a>
 
-[My Blogs On Medium](https://viruszzwarning.medium.com/)
+
+## Credits & License:
+
+----
+Fingers-Controls-Brightness were put together by [Hrisikesh](https://twitter.com/hrisikesh_pal) [(VirusZzWarning)](https://github.com/VirusZzHkP), but now it largely remains as a community supported repository. Fingers-Controls-Brightness is licensed under the [GNU General Public License v3.0 ](LICENSE). 
