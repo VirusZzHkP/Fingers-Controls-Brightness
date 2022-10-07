@@ -5,7 +5,7 @@ Language used:
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![GitHub top language](https://img.shields.io/github/languages/top/VirusZzHkP/Fingers-Controls-Brightness?color=red&style=for-the-badge)
-[![GitHub license](https://img.shields.io/github/license/VirusZzHkP/DirectoryDownloader?color=yellow&style=for-the-badge)](https://github.com/VirusZzHkP/DirectoryDownloader/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/VirusZzHkP/Fingers-Controls-Brightness?color=yellow&style=for-the-badge)](https://github.com/VirusZzHkP/Fingers-Controls-Brightness/blob/main/LICENSE)
 
 ---
 ![Control Brightness Using FINGERS](https://user-images.githubusercontent.com/76624193/146683296-a85c47d9-5b3d-44c9-b7bb-2d2b92101335.gif)
